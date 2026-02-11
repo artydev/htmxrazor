@@ -51,6 +51,13 @@ app.MapGet("/api/product/{id:int}", async (int id, IHttpClientFactory factory) =
     return Results.Content(html, "text/html");
 });
 
+// HTMX endpoint: Returns HTML fragment for cart using Razor Component
+app.MapGet("/api/cart", async () =>
+{
+    var html = await RenderComponentAsync<Cart>(new Dictionary<string, object?>());
+    return Results.Content(html, "text/html");
+});
+
 // Razor Components for initial page loads (SEO-friendly)
 app.MapRazorComponents<HtmxEcommerceRazorComponents.App>();
 

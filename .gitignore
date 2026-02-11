@@ -1,0 +1,66 @@
+﻿# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+
+# Build output
+bin/
+obj/
+out/
+publish/
+artifacts/
+
+# ASP.NET / Blazor specific
+wwwroot/lib/
+node_modules/
+
+# NuGet
+*.nupkg
+packages/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+secrets.json
+**/secrets.json
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime / tooling
+*.pid
+*.seed
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+# Publishing / packaging
+*.zip
+*.tar
+*.7z
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Misc
+project.lock.json
+project.fragment.lock.json

@@ -7,15 +7,25 @@
     <title>HTMX Razor E-Commerce</title>
     <link rel="stylesheet" href="/css/site.css" />
     <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <script src="./js/cart.js" defer></script>
 </head>
 <body>
-    <header>
+    <header style="display:flex;align-items:center;justify-content:space-between;">
         <h1>
-            <a href="/" 
-               hx-get="/api/products" 
-               hx-target="#content" 
+            <a href="/"
+               hx-get="/api/products"
+               hx-target="#content"
                hx-push-url="/">HTMX Razor Shop</a>
         </h1>
+        <nav>
+            <a href="/cart"
+               hx-get="/api/cart"
+               hx-target="#content"
+               hx-push-url="/cart"
+               style="color:white;text-decoration:none;margin-left:1rem;">
+                Panier (<span id="cart-count">0</span>)
+            </a>
+        </nav>
     </header>
     <main id="content">
         <Routes />

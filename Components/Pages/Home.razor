@@ -1,4 +1,8 @@
+@using HtmxEcommerceRazorComponents.Components.Fragments
 @page "/"
+
+
+
 
 <!-- HTMX loads products on page load -->
 <div hx-get="/api/products" 
@@ -8,3 +12,5 @@
         <p>Loading products...</p>
     </div>
 </div>
+
+

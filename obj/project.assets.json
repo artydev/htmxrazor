@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sdidio-ccrf\\Downloads\\HtmxRazorFrafments\\HtmxEcommerceRazorComponents.csproj",
+      "projectUniqueName": "C:\\temp\\htmxrazor\\HtmxEcommerceRazorComponents.csproj",
       "projectName": "HtmxEcommerceRazorComponents",
-      "projectPath": "C:\\Users\\sdidio-ccrf\\Downloads\\HtmxRazorFrafments\\HtmxEcommerceRazorComponents.csproj",
+      "projectPath": "C:\\temp\\htmxrazor\\HtmxEcommerceRazorComponents.csproj",
       "packagesPath": "C:\\Users\\sdidio-ccrf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sdidio-ccrf\\Downloads\\HtmxRazorFrafments\\obj\\",
+      "outputPath": "C:\\temp\\htmxrazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

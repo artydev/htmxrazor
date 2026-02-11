@@ -8,10 +8,24 @@
             <img src="@product.Thumbnail" alt="@product.Title" width="150" />
             <h3>@product.Title</h3>
             <p><strong>$@product.Price</strong></p>
-            <a href="/product/@product.Id" 
-               hx-get="/api/product/@product.Id" 
-               hx-target="#content" 
-               hx-push-url="/product/@product.Id">View Details</a>
+
+            <div style="display:flex;gap:0.5rem;justify-content:center;margin-top:0.5rem;">
+                <a href="/product/@product.Id"
+                   hx-get="/api/product/@product.Id"
+                   hx-target="#content"
+                   hx-push-url="/product/@product.Id">View Details</a>
+
+                <button class="add-to-cart"
+                        type="button"
+                        onclick="window.cart.addFromElement(this)"
+                        data-id="@product.Id"
+                        data-title="@product.Title"
+                        data-price="@product.Price.ToString(System.Globalization.CultureInfo.InvariantCulture)"
+                        data-thumbnail="@product.Thumbnail"
+                        style="padding:0.45rem 0.9rem;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;border-radius:6px;border:none;cursor:pointer;">
+                    Ajouter au panier
+                </button>
+            </div>
         </div>
     }
 </div>

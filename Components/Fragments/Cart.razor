@@ -1,0 +1,29 @@
+@page "/cart"
+
+<div class="cart-container">
+    <h2>Panier</h2>
+    <div id="cart-root">
+        <p class="loading">Chargement du panier…</p>
+    </div>
+
+    <div class="cart-actions" style="margin-top:1rem;">
+        <button type="button" onclick="window.cart && window.cart.clear()" class="back-button">Vider le panier</button>
+        <button type="button" onclick="window.cart && window.cart.checkout()" class="back-button" style="margin-left:0.5rem;">Passer à la caisse</button>
+    </div>
+</div>
+
+<!-- Ne pas recharger /js/cart.js ici si il est déjà référencé dans App.razor.
+     Simple appel sécurisé pour forcer le rendu après insertion HTMX. -->
+<script>
+    (function() {
+        try {
+            if (window.cart && typeof window.cart.render === 'function') {
+                // appel immédiat si le script est déjà chargé
+                window.cart.render();
+                window.cart.updateHeaderCount && window.cart.updateHeaderCount();
+            }
+        } catch (e) {
+            console.error('Cart init error', e);
+        }
+    })();
+</script>
