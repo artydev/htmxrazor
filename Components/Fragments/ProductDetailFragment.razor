@@ -1,0 +1,24 @@
+@using HtmxEcommerceRazorComponents
+
+<div class="product-detail">
+    <h2>@Product.Title</h2>
+    <img src="@Product.Thumbnail" alt="@Product.Title" width="300" />
+    <p class="description">@Product.Description</p>
+    <div class="product-info">
+        <p><strong>Price:</strong> $@Product.Price</p>
+        <p><strong>Rating:</strong> @Product.Rating ★</p>
+        <p><strong>Brand:</strong> @Product.Brand</p>
+        <p><strong>Category:</strong> @Product.Category</p>
+        <p><strong>Stock:</strong> @Product.Stock units</p>
+    </div>
+    <a href="/products" 
+       hx-get="/api/products" 
+       hx-target="#content" 
+       hx-push-url="/products" 
+       class="back-button">← Back to Products</a>
+</div>
+
+@code {
+    [Parameter]
+    public Product Product { get; set; } = new();
+}

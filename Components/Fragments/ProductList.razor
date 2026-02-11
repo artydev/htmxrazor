@@ -1,0 +1,22 @@
+@using HtmxEcommerceRazorComponents
+
+<h2>Products</h2>
+<div class="products">
+    @foreach (var product in Products)
+    {
+        <div class="product-card">
+            <img src="@product.Thumbnail" alt="@product.Title" width="150" />
+            <h3>@product.Title</h3>
+            <p><strong>$@product.Price</strong></p>
+            <a href="/product/@product.Id" 
+               hx-get="/api/product/@product.Id" 
+               hx-target="#content" 
+               hx-push-url="/product/@product.Id">View Details</a>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Product> Products { get; set; } = new();
+}

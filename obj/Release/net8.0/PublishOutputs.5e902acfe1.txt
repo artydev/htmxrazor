@@ -1,0 +1,5 @@
+C:\Users\sdidio-ccrf\Downloads\htmxecommercerazorcomponents_razorfragments-925b9184-fcdd-4cc3-ad41-82f6fc3ca704\obj\Release\net8.0\PubTmp\Out\HtmxEcommerceRazorComponents.exe
+C:\Users\sdidio-ccrf\Downloads\htmxecommercerazorcomponents_razorfragments-925b9184-fcdd-4cc3-ad41-82f6fc3ca704\obj\Release\net8.0\PubTmp\Out\HtmxEcommerceRazorComponents.dll
+C:\Users\sdidio-ccrf\Downloads\htmxecommercerazorcomponents_razorfragments-925b9184-fcdd-4cc3-ad41-82f6fc3ca704\obj\Release\net8.0\PubTmp\Out\HtmxEcommerceRazorComponents.deps.json
+C:\Users\sdidio-ccrf\Downloads\htmxecommercerazorcomponents_razorfragments-925b9184-fcdd-4cc3-ad41-82f6fc3ca704\obj\Release\net8.0\PubTmp\Out\HtmxEcommerceRazorComponents.runtimeconfig.json
+C:\Users\sdidio-ccrf\Downloads\htmxecommercerazorcomponents_razorfragments-925b9184-fcdd-4cc3-ad41-82f6fc3ca704\obj\Release\net8.0\PubTmp\Out\HtmxEcommerceRazorComponents.pdb

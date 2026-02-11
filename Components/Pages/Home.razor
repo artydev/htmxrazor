@@ -1,0 +1,10 @@
+@page "/"
+
+<!-- HTMX loads products on page load -->
+<div hx-get="/api/products" 
+     hx-trigger="load" 
+     hx-swap="outerHTML">
+    <div class="loading">
+        <p>Loading products...</p>
+    </div>
+</div>

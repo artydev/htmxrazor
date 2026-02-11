@@ -1,0 +1,15 @@
+@page "/product/{Id:int}"
+
+<!-- Server-rendered initial load for SEO, then HTMX takes over -->
+<div hx-get="/api/product/@Id" 
+     hx-trigger="load" 
+     hx-swap="outerHTML">
+    <div class="loading">
+        <p>Loading product details...</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+}
