@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HtmxEcommerceRazorComponents")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41bde5017fe69d3ef99e18f6fbcf3dfc868a9fa5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9075a1d0392d94699a6054ecf073f1e006932025")]
 [assembly: System.Reflection.AssemblyProductAttribute("HtmxEcommerceRazorComponents")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HtmxEcommerceRazorComponents")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
